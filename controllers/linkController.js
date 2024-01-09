@@ -10,7 +10,7 @@ exports.shortenUrl = async (req, res) => {
 
     const link = await Link.create({
       originalURL: originalUrl,
-      shortenedURL: `http://localhost:8001/${code}`,
+      shortenedURL: `https://url-4s79.onrender.com/${code}`,
       visited: 0,
       code: code,
       user: userId,
