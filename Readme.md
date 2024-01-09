@@ -1,4 +1,3 @@
-Certainly! Here's the revised README with the addition of the Frontend GitHub Repository:
 
 # Shortly URL Shortener
 
@@ -27,10 +26,10 @@ Shortly is a simple URL shortening service that allows users to create short ali
 ## GitHub Repositories
 
 ### Backend Repository
-- [Shortly Backend Repository](https://github.com/abhishekchauhan-1/urlShortner-backend)
+- [Shortly Backend Repository](https://github.com/abhishekchauhan-1/BackendUrlShortner)
 
 ### Frontend Repository
-- [Shortly Frontend Repository](https://github.com/abhishekchauhan-1/urlShortner-frontend)
+- [Shortly Frontend Repository](https://github.com/abhishekchauhan-1/urlShortner)
 
 ## Getting Started
 

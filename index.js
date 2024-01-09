@@ -92,23 +92,23 @@ app.get('/:id', async (req, res) => {
     return res.status(404).json({ error: "URL not found" });
   }
 
-  // Check if the link is expired
+
   const currentTime = new Date();
   const creationTime = link.createdAt;
-  const tenMinutesInMilliseconds = 10 * 60 * 1000; // 10 minutes in milliseconds
+  const fortyEightHoursInMilliseconds = 48 * 60 * 60 * 1000; // 48 hours in milliseconds
 
-  if (currentTime - creationTime > tenMinutesInMilliseconds) {
-    // Move the link to expiredLinks array
+  if (currentTime - creationTime > fortyEightHoursInMilliseconds) {
+   
     link.expiredLinks.push({
       originalURL: link.originalURL,
       code: link.code,
       shortenedURL: link.shortenedURL,
     });
 
-    // Increment expired link count
+   
     link.expiredLinkCount++;
 
-    // Save the changes
+  
     await link.save();
 
     return res.status(410).json({ error: "URL has expired" });
