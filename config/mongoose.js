@@ -1,7 +1,7 @@
 // db.js
 const mongoose = require('mongoose');
 
-const uri = 'mongodb://localhost:27017/urlShortner';
+const uri = 'mongodb+srv://singhchauhanabhishek816:Abhi123@cluster0.4fiq4mm.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
